@@ -40,7 +40,7 @@ export default function Search() {
                       }}).map(product =>
                         <Link href='details' className={Style.product} key={product.id} onClick={() => localStorage.setItem("detailsId",JSON.stringify(product.id))}>
                             <div className={Style.image}>
-                                <Image src={product.image} alt="image" width={"250"} height={"250"} style={{ width: '100%', height: '100%' }}/>
+                                <Image src={product.image} alt="image" width={"250"} height={"250"} style={{ width: '60%', height: '100%' }}/>
                             </div>
                             <div className={Style.data}>
                                 <h4>{product.title}</h4>
