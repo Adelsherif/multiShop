@@ -1,11 +1,14 @@
-.products{margin-top: 60px;}
+.products{
+    height: auto;
+    margin-top: 60px;
+}
 .products .inner{
-    min-height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
     gap: 30;
 }
 .products .product{
+    height: 100%;
     margin: 5px;
     padding:10px 5px;
     border: 1px solid rgb(224, 222, 222);
