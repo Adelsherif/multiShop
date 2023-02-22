@@ -20,7 +20,7 @@ export default function Products() {
                     products.map(product =>
                         <Link href='details' key={product.id} className={Style.product}  onClick={() => localStorage.setItem("detailsId",JSON.stringify(product.id))}>
                             <div className={Style.image}>
-                                <Image src={product.image} alt="image" width="280" height="280" style={{ width: '100%', height: '100%' }} />
+                                <Image src={product.image} alt="image" width="280" height="280" style={{ width: '60%', height: '100%' }} />
                             </div>
                             <div className={Style.data}>
                                 <h4>{product.title}</h4>
