@@ -6,6 +6,7 @@ import Style from '../styles/Details.module.css';
 import {HiArrowNarrowLeft} from 'react-icons/hi';
 import Link from 'next/link';
 import { products as result } from '../components/redux/data';
+import { Fade } from "react-awesome-reveal";
 
 
 function Details() {
@@ -13,12 +14,13 @@ function Details() {
     const [mode,setMode] = useState(0);
     const [number,setNumber] = useState(1);
     const dispatch = useDispatch()
-    var productsIds =typeof window !== 'undefined' ? (localStorage.getItem("productsIds") ? JSON.parse(localStorage.getItem("productsIds")) :localStorage.setItem("productsIds",[])):false;
+    var productsIds =typeof window !== 'undefined' ? (localStorage.getItem("productsIds") ? JSON.parse(localStorage.getItem("productsIds")) :localStorage.setItem("productsIds",JSON.stringify([]))):false;
     useEffect(() =>{
         dispatch(result())
     },[dispatch])
   return (
     <div className={Style.detailsContent}>
+        <Fade>
             <div className="back"><Link href='/search' className="arrow"><HiArrowNarrowLeft /></Link></div>
             <div className={Style.details}>
                 <div className={Style.inner}>
@@ -57,7 +59,7 @@ function Details() {
                                                             price:element.price,
                                                             quantity:parseInt(number)
                                                         }
-                                                        productsIds =  productsIds.filter(ele => ele.id !== obj.id)
+                                                        productsIds !== [] ?  productsIds.filter(ele => ele.id !== obj.id) :[]
                                                         productsIds.push(obj);
                                                         localStorage.setItem("productsIds",JSON.stringify(productsIds));
                                                         setMode(1);
@@ -71,6 +73,7 @@ function Details() {
                     }
                 </div>
             </div>
+        </Fade>
     </div>
 )
 }
