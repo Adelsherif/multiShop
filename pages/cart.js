@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Style from '../styles/Cart.module.css';
 import {HiArrowNarrowLeft} from 'react-icons/hi';
 import Link from 'next/link';
-import { Fade } from "react-awesome-reveal";
 
 
  function Cart() {
@@ -14,7 +13,6 @@ import { Fade } from "react-awesome-reveal";
     var total=0;
   return (
     <div className={Style.cart}>
-        <Fade >
             <div className="back"><Link href='/' className="arrow"><HiArrowNarrowLeft /></Link></div>
             <h1>Shopping <span>Cart</span></h1>
             <div className={Style.details}>
@@ -45,7 +43,6 @@ import { Fade } from "react-awesome-reveal";
                 </div>
             </div>
             <div className={Style.total}><h3><span>Total:</span><span>{total} $</span></h3></div>
-        </Fade>
     </div>
 )
 }

@@ -6,7 +6,6 @@ import Style from '../styles/Details.module.css';
 import {HiArrowNarrowLeft} from 'react-icons/hi';
 import Link from 'next/link';
 import { products as result } from '../components/redux/data';
-import { Fade } from "react-awesome-reveal";
 
 
 function Details() {
@@ -20,7 +19,6 @@ function Details() {
     },[dispatch])
   return (
     <div className={Style.detailsContent}>
-        <Fade>
             <div className="back"><Link href='/search' className="arrow"><HiArrowNarrowLeft /></Link></div>
             <div className={Style.details}>
                 <div className={Style.inner}>
@@ -73,7 +71,6 @@ function Details() {
                     }
                 </div>
             </div>
-        </Fade>
     </div>
 )
 }

@@ -1,12 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Style from '../../styles/Sales.module.css';
-import { Fade } from "react-awesome-reveal";
 
 export default function Sales() {
   return (
     <div className={Style.sales}>
-      <Fade>
         <div className='container'>
             <div className={Style.block}>
                 <div className={Style.text}>
@@ -17,7 +15,6 @@ export default function Sales() {
                 </div>
             </div>
         </div>
-        </Fade>
     </div>
   )
 }

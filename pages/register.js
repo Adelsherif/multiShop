@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Style from '../styles/register.module.css';
 import {HiArrowNarrowLeft} from 'react-icons/hi';
-import { Fade } from "react-awesome-reveal";
 
 
 export default function Register() {
     var [have,setHave] = useState(0);
   return (
     <div className={Style.register}>
-        <Fade>
         <div className="back"><Link href='/' className="arrow"><HiArrowNarrowLeft /></Link></div>
         {
             have === 0 ?(
@@ -52,7 +50,6 @@ export default function Register() {
                 </div>
             )
         }
-        </Fade>
     </div>
   )
 }

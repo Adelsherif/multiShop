@@ -6,7 +6,6 @@ import {HiOutlineSearch,HiStar,HiArrowNarrowLeft} from 'react-icons/hi';
 import { useDispatch, useSelector } from 'react-redux';
 import { getValue } from '../components/redux/reducer';
 import { products } from '../components/redux/data';
-import { Fade } from "react-awesome-reveal";
 import Sales from '../components/sales/sales';
 
 export default function Search() {
@@ -18,7 +17,6 @@ export default function Search() {
   },[dispatch])
   return (
     <div className={Style.search}>
-      <Fade>
         <div className="back"><Link href='/' className="arrow"><HiArrowNarrowLeft /></Link></div>
       <div className="container">
         <div className={Style.form}>
@@ -59,7 +57,6 @@ export default function Search() {
             </div>
     </div>
     </div>
-    </Fade>
     </div>
   )
 }
