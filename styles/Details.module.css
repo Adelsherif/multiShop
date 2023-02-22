@@ -1,0 +1,64 @@
+.detailsContent .details{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.detailsContent .details .fullDetails{
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:20px 10px;
+}
+.detailsContent .details .fullDetails .image{
+    width: 30%;
+    height: auto;
+}
+.detailsContent .details .fullDetails .image img{
+    width: 100%;
+    height: auto;
+}
+.detailsContent .details .fullDetails .content{
+    width: 60%;
+    line-height: 1.5;
+}
+.detailsContent .details .fullDetails .content .category{
+    width: fit-content;
+    font-weight: bolder;
+    line-height: 1.6;
+    padding: 0px 5px;
+    background-color: var(--orange);
+    color: white;
+}
+.detailsContent .details .fullDetails .content span{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--orange);
+}
+.detailsContent .details .fullDetails .content .number form input{
+    width: 50px;
+    padding: 3px;
+    outline: none;
+}
+.detailsContent .details .fullDetails .content .adder button{
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--orange);
+    color: white;
+    margin-top: 10px;
+    padding: 15px 40px;
+}
+@media (max-width:992px){.detailsContent .details .fullDetails{width: 90%;}}
+@media (max-width:768px){
+    .detailsContent .details .fullDetails .image{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .detailsContent .details .fullDetails .content{width: 100%;}
+}

@@ -1,0 +1,84 @@
+.blogs{margin-top: 80px;}
+.blogs .gallery{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.701);
+    z-index:666666;
+}
+.blogs .gallery .icon{
+    font-size: 35px;
+    color: white;
+    text-align: end;
+    padding: 30px;
+}
+.blogs .gallery .images{
+    width: 100% !important;
+    height:80vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.blogs .gallery .images img{
+    width: 50% !important;
+    height: auto !important;
+}
+.blogs .blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blogs .blocks .block{
+    width: 32%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.blogs .blocks .block .images{
+    width: 100% !important;
+    position: relative !important;
+    overflow: hidden;
+}
+.blogs .blocks .block .images img{
+    width: 100% !important;
+    transition: 1s;
+}
+.blogs .blocks .block .images img:last-of-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.blogs .blocks .block:hover img:last-of-type{display: none;}
+.blogs .blocks .block:hover img{transform: scale(1.2);}
+.blogs .blocks .block .text{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.368);
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.blogs .btn{
+    text-align: center;
+    margin-top: 10px;
+}
+.blogs .btn button{
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+.blogs .btn button:hover{background-color: var(--orange);}
+@media (max-width:992px){.blogs .blocks .block{width: 48%}}
+@media (max-width:768px){.blogs .blocks .block{width: 100%}}

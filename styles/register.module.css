@@ -1,0 +1,61 @@
+.register .block{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
+.register .block .inner{
+    width: 500px;
+    padding: 30px 30px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.register .block .inner .name{
+    position: relative;
+    text-align: center;
+}
+.register .block .inner .name p{
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(37, 36, 36);
+}
+.register .block .form label{
+    font-size: 20px;
+    color: rgb(61, 60, 60);
+}
+.register .block .form input{
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(186, 183, 183);
+    outline: none;
+}
+.register .block .form button{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 40px ;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: white;
+}
+.register .block .inner .last{
+    text-align: center;
+    color: gray;
+}
+.register .block .inner .last span{
+    color: var(--orange);
+    cursor: pointer;
+}
+@media (max-width:992px){.register .block .inner{width: 60%;}}
+@media (max-width:768px){.register .block .inner{width: 90%;}}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Varela+Round&display=swap');
+:root{
+  --black:rgb(16, 16, 88) ;
+  --orange:orangered;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,
+body {
+  box-sizing:border-box ;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family:"Varela Round",-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+* {box-sizing: border-box;}
+.container{
+  width: 90%;
+  position: relative;
+  margin: auto;
+}
+.head{
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.head h1{font-size: 50px;}
+.head h1 span{color: var(--orange);}
+.back{
+  width: 100%;
+  padding: 10px 20px;
+}
+.arrow{
+  font-size: 40px;
+  color: var(--orange);
+  animation: 1s animation ease-in-out infinite;
+}
+.swiper-pagination-bullet{background-color: white !important;}
+@keyframes animation{
+  0%{margin-left: 5px;}
+  100%{margin-left: 0px;}
+}
+.swiper-button-next{color: white !important;}
+.swiper-button-prev{color: white !important;}
+@media (max-width:992px){.container{width: 95%;}}
+@media (prefers-color-scheme: dark) {
+  html {color-scheme: dark;}
+  body {
+    color: white;
+    background: black;
+  }
+}
