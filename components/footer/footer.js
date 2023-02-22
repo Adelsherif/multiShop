@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from '../../styles/Footer.module.css';
-import {BsFacebook,BsInstagram,BsTwitter} from 'react-icons/Bs';
+import {BsFacebook,BsInstagram,BsTwitter} from 'react-icons/bs';
 import {FaCopyright} from 'react-icons/fa';
 
 
