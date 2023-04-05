@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <br />
 <h3><a href="https://multi-shop.vercel.app/">Live</a></h3>
 
-<img src="https://raw.githubusercontent.com/Adelsherif/e-commerce/master/design.png" alt="image" />
+<img src="https://github.com/Adelsherif/multiShop/blob/master/screencapture-localhost-3000-2023-02-14-16_10_42.png" alt="image" />
 
 ## Getting Started
 
